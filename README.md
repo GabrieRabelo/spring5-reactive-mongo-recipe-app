@@ -1,5 +1,5 @@
-[![CircleCI](https://circleci.com/gh/GabrieRabelo/spring5-reactive-mongo-recipe-app
-.svg?style=svg)](https://circleci.com/gh/GabrieRabelo/spring5-reactive-mongo-recipe-app)
+[![CircleCI](https://circleci.com/gh/GabrieRabelo/spring5-reactive-mongo-recipe-app.svg?style=for-the-badge&logo=appveyor)](https://circleci.com/gh/GabrieRabelo/spring5-reactive-mongo-recipe-app)
+
 
 # spring5-reactive-mongo-recipe-app
 Reactive Recipe Application Using MongoDB
