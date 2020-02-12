@@ -14,6 +14,7 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(SpringRunner.class)
 @DataMongoTest
 public class CategoryReactiveRepositoryTest {
+
     @Autowired
     CategoryReactiveRepository categoryReactiveRepository;
 
@@ -30,7 +31,8 @@ public class CategoryReactiveRepositoryTest {
         categoryReactiveRepository.save(category).block();
 
         Long count = categoryReactiveRepository.count().block();
-        assertEquals(Long.valueOf(1L),count);
+
+        assertEquals(Long.valueOf(1L), count);
     }
 
     @Test
@@ -41,6 +43,7 @@ public class CategoryReactiveRepositoryTest {
         categoryReactiveRepository.save(category).then().block();
 
         Category fetchedCat = categoryReactiveRepository.findByDescription("Foo").block();
+
         assertNotNull(fetchedCat.getId());
     }
 }
