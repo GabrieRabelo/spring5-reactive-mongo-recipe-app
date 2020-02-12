@@ -38,7 +38,7 @@ public class CategoryReactiveRepositoryTest {
         Category category = new Category();
         category.setDescription("Foo");
 
-        categoryReactiveRepository.save(category).block();
+        categoryReactiveRepository.save(category).then().block();
 
         Category fetchedCat = categoryReactiveRepository.findByDescription("Foo").block();
         assertNotNull(fetchedCat.getId());
